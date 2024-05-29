@@ -7,13 +7,13 @@ document.getElementById("btn").addEventListener("click", function() {
 
 
  // Get values from inputs
- const age = parseInt(ageInput.value); // Convert age input value to integer
+ const age = ageInput.value; // Convert age input value to integer
  const name = nameInput.value; // Get name input value
 
 
  // Validate inputs
  if (!age || !name) { // Check if age or name is empty
-   alert("Please enter valid details."); // Show alert if any field is empty
+   alert("Please enter valid details"); // Show alert if any field is empty
    return; // Stop further execution if validation fails
  }
 
